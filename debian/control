@@ -1,0 +1,27 @@
+Source: libtext-format-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: gregor herrmann <gregoa@debian.org>,
+           Salvatore Bonaccorso <carnil@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               libmodule-build-perl
+Build-Depends-Indep: perl
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libtext-format-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libtext-format-perl.git
+Homepage: https://metacpan.org/release/Text-Format
+Rules-Requires-Root: no
+
+Package: libtext-format-perl
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends},
+         ${perl:Depends}
+Description: module for formatting plain text
+ Text::Format is a Perl module that provides various utility functions for
+ formatting plain text. This module is similar to, but more powerful than,
+ the Text::Wrap module (in Perl core). It can format arbitrary lines into
+ paragraphs, center text, handle indentation and left/right margins, and
+ convert between tabs and spaces.
